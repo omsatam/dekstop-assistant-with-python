@@ -61,7 +61,7 @@ def sendemail(tob,contents):
 	server.ehlo()
 	server.starttls()
 	server.ehlo()
-	server.login('satamom254@gmail.com','ydcpkkzqtdwndcqs')
+	server.login('myEmail','myPassword')
 	server.send(tob,contents)
 	server.close()
 
@@ -113,7 +113,7 @@ if __name__ == "__main__":
 			try:
 				speak("what shall i say...")
 				content = takecommand()
-				to = 'omsatam1005@gmail.com'
+				to = 'reciever_email'
 				sendemail(to,content)
 				speak("email has been sent successfully")
 			except exception as e:
